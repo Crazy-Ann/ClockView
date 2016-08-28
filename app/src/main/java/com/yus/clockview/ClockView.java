@@ -78,6 +78,13 @@ public class ClockView extends View {
         secondPaint.setColor(Color.parseColor("#FF4081"));
         secondPaint.setStrokeWidth(11);
     }
+
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+//        setMeasuredDimension();
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+    }
+
     private int cX;
     private int cY;
     private float bigRadius;
